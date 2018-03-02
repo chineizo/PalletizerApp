@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp">
+
+            <TableRow
+                android:id="@+id/environment_spinner_row"
+                android:visibility="gone"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/environment" />
+
+                <Spinner
+                    android:id="@+id/environment_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/company_number" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/company_number"
+                    android:enabled="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    tools:text="100" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/facility_code" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/facility_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:maxLength="5"
+                    android:maxLines="1"
+                    tools:text="273" />
+
+            </TableRow>
+
+
+
+            <TableRow android:layout_marginBottom="10dp">
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lines" />
+
+
+                <Spinner
+                    android:id="@+id/lines_spinner"
+                    android:maxLength="2"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/number_series_type"
+                    android:hint="@string/enter_number_series_type"
+                    android:imeOptions="actionNext"
+                    android:maxLength="2"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/number_series"
+                    android:hint="@string/enter_number_series"
+                    android:maxLength="2"
+                    android:inputType="textCapCharacters"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:layout_width="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/printer_address"
+                    android:hint="@string/enter_ip_address"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     />
+
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/printer_name"
+                    android:imeOptions="actionNext"
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:hint="@string/enter_printer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/printer_description"
+                    android:hint="@string/description_here"
+                    android:enabled="false"
+                    android:maxLines="1"
+                    android:imeOptions="actionDone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </TableRow>
+
+
+
+        </TableLayout>
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

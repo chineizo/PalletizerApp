@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="spinner_data">
+        <item>@string/dev</item>
+        <item>@string/qa</item>
+        <item>@string/prod</item>
+    </array>
+
+    <string name="dev">DEV</string>
+    <string name="qa">QA</string>
+    <string name="prod">PROD</string>
+    <!--<string name="PROD">PROD</string>-->
+    <array name="input_type_data">
+        <item>@string/scanner</item>
+        <item>@string/keyboard</item>
+    </array>
+    <string name="scanner">Scanner</string>
+    <string name="keyboard">Keyboard</string>
+
+    <array name="lines">
+        <item>@string/a</item>
+        <item>@string/b</item>
+        <item>@string/c</item>
+    </array>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+
+    <!--<array name="number_series">-->
+        <!--<item>A</item>-->
+        <!--<item>B</item>-->
+        <!--<item>C</item>-->
+    <!--</array>-->
+
+    <!--<string name="dwexample_action">com.dwexample.ACTION</string>-->
+    <!--<string name="datawedge_intent_key_source">com.symbol.datawedge.source</string>-->
+    <!--<string name="datawedge_intent_key_label_type">com.symbol.datawedge.label_type</string>-->
+    <!--<string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>-->
+    <!--<string name="datawedge_intent_key_source_legacy">com.motorolasolutions.emdk.datawedge.source</string>-->
+    <!--<string name="datawedge_intent_key_label_type_legacy">com.motorolasolutions.emdk.datawedge.label_type</string>-->
+    <!--<string name="datawedge_intent_key_data_legacy">com.motorolasolutions.emdk.datawedge.data_string</string>-->
+</resources>

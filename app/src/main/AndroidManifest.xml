@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="m1app.com.albertsons.palletizerandroid">
+
+    <application
+        android:name=".M1Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/M1Theme">
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode" />
+
+        <activity
+            android:name=".activity.PrinterScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|uiMode" />
+
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.TestActivity"/>
+
+        <activity
+            android:name=".activity.InterstitialActivity"
+            android:noHistory="true" />
+
+        <activity-alias
+            android:name=".activity.MainActivity"
+            android:targetActivity=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="496fa6afd16e09350bf54618b5fc16d7fcfd8140" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="albertsons.com.m1app.activity.MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="@string/line" />
+
+                <Spinner
+                    android:id="@+id/lines_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="@string/mo" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/material_number"
+                    android:layout_width="match_parent"
+                    android:inputType="text"
+                    android:layout_height="wrap_content"
+
+                    android:hint="@string/scan_material_number"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="@string/number_of_cases" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_quantity"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/LabelStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="4dp"
+                    android:text="@string/labels" />
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/number_of_labels"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_number_of_labels"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:lines="1"
+                    android:maxLength="10"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/label_search"
+                    style="@style/button_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/label_search" />
+
+                <Button
+                    android:id="@+id/clear_buffer"
+                    style="@style/button_style"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:text="@string/clear_printer" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/input_layout">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <include layout="@layout/progress_layout" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

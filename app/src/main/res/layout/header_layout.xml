@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/LabelStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/LabelStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Description" />
+
+    <TextView
+        android:id="@+id/value"
+        style="@style/LabelStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:text="Value" />
+
+    <TextView
+        android:id="@+id/length"
+        style="@style/LabelStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Length" />
+
+    <TextView
+        android:id="@+id/type"
+        style="@style/LabelStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Type" />
+
+    <TextView
+        android:id="@+id/mandatory"
+        style="@style/LabelStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="M" />
+</LinearLayout>

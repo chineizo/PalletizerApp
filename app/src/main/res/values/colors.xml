@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#1E88E5</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#42A5F5</color>
+    <color name="divider">#d0cfcf</color>
+    <color name="turquoise_blue">#03B2D9</color>
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="button_background">@color/colorPrimary</color>
+    <color name="hint_color">#e3e3e3</color>
+</resources>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableRow>
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/serial_number" />
+
+            <TextView
+                android:id="@+id/serial_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/item_number" />
+
+            <TextView
+                android:id="@+id/item_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/description" />
+
+            <TextView
+                android:id="@+id/description"
+
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/lot" />
+
+            <TextView
+                android:id="@+id/lot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/uom" />
+
+            <TextView
+                android:id="@+id/uom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/prod_date" />
+
+            <TextView
+                android:id="@+id/prod_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/LabelStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:text="@string/pull_date" />
+
+            <TextView
+                android:id="@+id/pull_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
